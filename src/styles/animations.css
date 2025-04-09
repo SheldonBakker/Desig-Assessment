@@ -1,0 +1,28 @@
+/* Animation styles for the web application */
+
+/* Subtle pulsing animation that scales an element slightly up and down */
+@keyframes growPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the pulse animation to buttons with this class */
+.grow-button {
+  animation: growPulse 2s infinite;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+/* some depth perception */
+.grow-button:hover {
+  animation: none !important;
+  transform: scale(1.08) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

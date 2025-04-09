@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./styles/animations.css";
+
+/* Custom font imports for Under Armour branding - Neue Plakvariants */
+@font-face {
+  font-family: "Neue-Plak-Bold";
+  src: url("./assets/Fonts/Neue-Plak-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue-Plak-CondBlack";
+  src: url("./assets/Fonts/Neue-Plak-CondBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-plak-bold {
+  font-family: "Neue-Plak-Bold", sans-serif;
+}
+
+.font-plak-condblack {
+  font-family: "Neue-Plak-CondBlack", sans-serif;
+}
